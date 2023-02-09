@@ -1,19 +1,313 @@
-<html>
-  <head>
-    <style>
-      div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
+<!DOCTYPE html>
+
+<html data-bs-theme="dark" lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Riverside Drift">
+  <title>Riverside Drift</title>
+
+  <link href="./index_files/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Favicons -->
+  <!-- <link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="https://getbootstrap.com/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://getbootstrap.com/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="https://getbootstrap.com/docs/5.3/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="https://getbootstrap.com/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="https://getbootstrap.com/docs/5.3/assets/img/favicons/favicon.ico"> -->
+  <meta name="theme-color" content="#712cf9">
+
+
+  <style>
+    .card-img-top {
+      object-fit: cover;
+      display: block;
+    }
+
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
       }
-      img {
-        max-width: 90vh;
-        max-height: 90vh;
-      }
-    </style>
-  </head>
-  <div>
-    <img src="rvrsdrft.jpg" />
-  </div>
+    }
+
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+    .more-info {
+  position: relative;
+}
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.700717787114846) 50%, rgba(0,0,0,1) 100%);
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:1;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  text-align: left;
+}
+
+  </style>
+
+</head>
+
+<body>
+
+  <main>
+    <section class="py-5 text-center container">
+      <div class="row">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <img width="100%" src="index_files/sponsors/Riverside Drift Logo.png">
+        </div>
+      </div>
+    </section>
+
+    <div class="album bg-dark">
+      <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 g-3">
+
+          <div class="col">
+            <div class="card shadow-sm">
+
+              <div height="225" class="more-info">
+              <img class="card-img-top" width="100%" height="225" role="img"
+                src="index_files/events/Beginners Clinic.JPG" />
+                <div class="overlay">
+                  <div>
+                    <span class="h4">Beginner's Clinic</span>
+                </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>
+                  <span class="h6">March 18, 2023</span><span class="h6 fst-italic float-end text-muted">Salem Speedway</span>
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <a href class="btn btn-sm btn-outline-secondary">Register</a>
+                    <a href class="btn btn-sm btn-outline-secondary">Rulebook</a>
+                  </div>
+                  <small class="text-muted"><a href class="btn btn-sm btn-outline-secondary">Event Page</a></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+
+              <div height="225" class="more-info">
+              <img class="card-img-top" width="100%" height="225" role="img"
+                src="index_files/events/Spring Matsuri.JPG" />
+                <div class="overlay">
+                  <div>
+                    <span class="h4">Spring Matsuri</span>
+                </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>
+                  <span class="h6">April 21-23, 2023</span><span class="h6 fst-italic float-end text-muted">Salem Speedway</span>
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <a href class="btn btn-sm btn-outline-secondary">Register</a>
+                    <a href class="btn btn-sm btn-outline-secondary">Rulebook</a>
+                  </div>
+                  <small class="text-muted"><a href class="btn btn-sm btn-outline-secondary">Event Page</a></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+
+              <div height="225" class="more-info">
+              <img class="card-img-top" width="100%" height="225" role="img"
+                src="index_files/events/Midwest Uprising.JPG" />
+                <div class="overlay">
+                  <div>
+                    <span class="h4">Midwest Uprising</span><img class="float-end" height="30" src="index_files/sponsors/GP NEW LOGO 3D.png" />
+                </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>
+                  <span class="h6">May 19-21, 2023</span><span class="h6 fst-italic float-end text-muted">Salem Speedway</span>
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <a href class="btn btn-sm btn-outline-secondary">Register</a>
+                    <a href class="btn btn-sm btn-outline-secondary">Rulebook</a>
+                  </div>
+                  <small class="text-muted"><a href class="btn btn-sm btn-outline-secondary">Event Page</a></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <div height="225" class="more-info">
+              <img class="card-img-top" width="100%" height="225" role="img"
+                src="index_files/events/The Revolution.JPG" />
+                <div class="overlay">
+                  <div>
+                    <span class="h4">The Revolution</span><img class="float-end" height="30" src="index_files/sponsors/GP NEW LOGO 3D.png" />
+                </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>
+                  <span class="h6">June 30 - July 2, 2023</span><span class="h6 fst-italic float-end text-muted">Englishtown Raceway Park</span>
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <a href class="btn btn-sm btn-outline-secondary">Register</a>
+                    <a href class="btn btn-sm btn-outline-secondary">Rulebook</a>
+                  </div>
+                  <small class="text-muted"><a href class="btn btn-sm btn-outline-secondary">Event Page</a></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+
+              <div height="225" class="more-info">
+              <img class="card-img-top" width="100%" height="225" role="img"
+                src="index_files/events/Hot Summer Nights.JPG" />
+                <div class="overlay">
+                  <div>
+                    <span class="h4">Hot Summer Nights</span>
+                </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>
+                  <span class="h6">August 4-6, 2023</span><span class="h6 fst-italic float-end text-muted">Salem Speedway</span>
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <a href class="btn btn-sm btn-outline-secondary">Register</a>
+                    <a href class="btn btn-sm btn-outline-secondary">Rulebook</a>
+                  </div>
+                  <small class="text-muted"><a href class="btn btn-sm btn-outline-secondary">Event Page</a></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+
+              <div height="225" class="more-info">
+              <img class="card-img-top" width="100%" height="225" role="img"
+                src="index_files/events/Fall Matsuri.JPG" />
+                <div class="overlay">
+                  <div>
+                    <span class="h4">Fall Matsuri</span>
+                </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>
+                  <span class="h6">September 22-23, 2023</span><span class="h6 fst-italic float-end text-muted">Salem Speedway</span>
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <a href class="btn btn-sm btn-outline-secondary">Register</a>
+                    <a href class="btn btn-sm btn-outline-secondary">Rulebook</a>
+                  </div>
+                  <small class="text-muted"><a href class="btn btn-sm btn-outline-secondary">Event Page</a></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="text-muted py-5">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 row-cols-lg-5 g-3 align-items-center">
+        <div class="col">
+          <img width="100%" src="index_files/sponsors/BC LOGO.png">
+        </div>
+        <div class="col">
+          <img width="100%" src="index_files/sponsors/KBDBodykits.png">
+        </div>
+        <div class="col">
+          <img width="100%" src="index_files/sponsors/VICHNWOLF.png">
+        </div>
+        <div class="col">
+          <img width="100%" src="index_files/sponsors/SoIN Love Sponsor Logo.png">
+        </div>
+        <div class="col">
+          <img width="100%" src="index_files/sponsors/Knight School of Welding.jpg">
+        </div>
+      </div>
+      <p class="float-end mb-1">
+        <a href="#">Back to top</a>
+      </p>
+    </div>
+  </footer>
+
+
+  <script src="./index_files/bootstrap.bundle.min.js.download"></script>
+
+
+
+</body>
+
 </html>
